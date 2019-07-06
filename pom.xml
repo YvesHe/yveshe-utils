@@ -4,13 +4,11 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>yveshe</groupId>
-	<artifactId>yveshe-utils</artifactId>
+	<groupId>com.yveshe</groupId>
+	<artifactId>com.yveshe.utils</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-
 	<name>yveshe-utils</name>
-	<!-- FIXME change it to the project's website -->
-	<url>http://www.example.com</url>
+	<url>https://github.com/YvesHe/yveshe-utils</url>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -19,7 +17,7 @@
 	</properties>
 
 	<dependencies>
-	<!-- ***Apache系: commons-lang3,commons-io,commons-collections*** -->
+
 		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
 		<dependency>
 			<groupId>org.apache.commons</groupId>
@@ -39,22 +37,19 @@
 			<version>3.2.2</version>
 		</dependency>
 
-		<!-- ***Json系*** -->
 		<!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
 		<dependency>
 			<groupId>com.alibaba</groupId>
 			<artifactId>fastjson</artifactId>
-			<version>1.2.38</version>
+			<version>1.2.58</version>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/org.mybatis/mybatis -->
 		<dependency>
 			<groupId>org.mybatis</groupId>
 			<artifactId>mybatis</artifactId>
 			<version>3.4.6</version>
 		</dependency>
 
-		<!-- ***mysql*** -->
 		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
 		<dependency>
 			<groupId>mysql</groupId>
@@ -62,7 +57,6 @@
 			<version>5.1.44</version>
 		</dependency>
 
-		<!-- ***Log4J*** -->
 		<!-- https://mvnrepository.com/artifact/log4j/log4j -->
 		<dependency>
 			<groupId>log4j</groupId>

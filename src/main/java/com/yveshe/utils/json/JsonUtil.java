@@ -1,12 +1,12 @@
-/**   
- * Filename:    JSONUtil.java   
- * Copyright:   Copyright (c)2016  
- * Company:     Yves  
- * @version:    1.0    
+/**
+ * Filename:    JSONUtil.java
+ * Copyright:   Copyright (c)2016
+ * Company:     Yves
+ * @version:    1.0
  * Create at:   2017-8-10
- * Description:  
+ * Description:
  *
- * Author       Yves He 
+ * Author       Yves He
  */
 package com.yveshe.utils.json;
 
@@ -16,15 +16,15 @@ import com.alibaba.fastjson.JSON;
 
 /**
  * Json转换
- * 
+ *
  * @author Yves He
- * 
+ *
  */
 public class JsonUtil {
 
     /**
      * T
-     * 
+     *
      * @param jsonStr
      * @param clazz
      * @return
@@ -35,17 +35,29 @@ public class JsonUtil {
 
     /**
      * String
-     * 
+     *
      * @param obj
      * @return
      */
     public static <T> String toJson(T obj) {
-        return JSON.toJSONString(obj);
+        return toJson(obj, false);
+    }
+
+    /**
+     * String
+     *
+     * @param obj
+     * @param format
+     *
+     * @return
+     */
+    public static <T> String toJson(T obj, boolean format) {
+        return JSON.toJSONString(obj, format);
     }
 
     /**
      * List<T>
-     * 
+     *
      * @param jsonStr
      * @param clazz
      * @return
